@@ -2,8 +2,8 @@ import { SectionHeader } from "@/components/SectionHeader";
 
 export const SectionAbout = () => {
   return (
-    <section className="w-full h-full flex items-center justify-center">
-      <div className="w-full h-full max-w-7xl flex flex-col items-center justify-center gap-10 py-16">
+    <section className="w-full h-full flex items-center justify-center py-14">
+      <div className="w-full h-full max-w-7xl flex flex-col items-center justify-center gap-12">
         <SectionHeader title="Quem somos?" />
 
         <div className="w-full flex items-center justify-center gap-20 max-w-4xl">
