@@ -1,8 +1,8 @@
 import { SectionHeaderProps } from "./types";
 
-export const SectionHeader = ({ children, title }: SectionHeaderProps) => {
+export const SectionHeader = ({ title, ...rest }: SectionHeaderProps) => {
   return (
-    <h2 className="text-5xl font-bold text-center text-slate-800">
+    <h2 {...rest} className={`text-5xl font-bold text-center text-slate-800 ${rest.className}`}>
       {title}
     </h2>
   );
