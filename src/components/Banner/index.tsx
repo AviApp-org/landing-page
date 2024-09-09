@@ -4,7 +4,7 @@ export const Banner = ({ ...rest }: BannerProps) => {
   return (
     <div
       {...rest}
-      className={`w-full h-[600px] flex ${rest.className}`}
+      className={`w-full h-[650px] flex ${rest.className}`}
     >
       <h1 className="text-6xl text-left font-bold text-slate-100 absolute self-end font-sans leading-snug mb-10 ml-20">
         A ferramenta de gestão <br /> para{" "}
