@@ -9,7 +9,7 @@ export const CardPricing = ({
 }: CardPricingProps) => {
   return (
     <div
-      className={`w-full max-w-sm p-4 bg-gray-50 border rounded-lg shadow-sm sm:p-8 ${rest.className}`}
+      className={`w-full max-w-sm p-4 bg-gray-50 border rounded-lg shadow-sm sm:p-8 max-sm:min-w-[300px] ${rest.className}`}
     >
       <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">
         {title}

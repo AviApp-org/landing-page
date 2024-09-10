@@ -3,11 +3,11 @@ import { SectionHeader } from "@/components/SectionHeader";
 export const SectionAbout = () => {
   return (
     <section className="w-full h-full flex items-center justify-center py-14">
-      <div className="w-full h-full max-w-7xl flex flex-col items-center justify-center gap-12">
+      <div className="w-full h-full max-w-7xl flex flex-col items-center justify-center gap-12 max-sm:gap-2">
         <SectionHeader title="Quem somos?" />
 
-        <div className="w-full flex items-center justify-center gap-20 max-w-4xl">
-          <p className="text-lg text-slate-600 font-sans">
+        <div className="w-full flex items-center justify-center gap-20 max-w-4xl max-sm:flex-col max-sm:p-10 max-sm:gap-6">
+          <p className="font-sans text-gray-500 text-center max-w-3xl max-sm:max-w-full">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec
             purus suscipit ligula congue venenatis rutrum quis metus.
             Suspendisse potenti. Aliquam volutpat nibh sed aliquet efficitur.

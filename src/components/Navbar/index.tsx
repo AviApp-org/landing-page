@@ -3,11 +3,11 @@ import { NavbarProps } from "./types";
 
 export const Navbar = ({ ...rest }: NavbarProps) => {
   return (
-    <nav {...rest} className={`w-full bg-transparent flex justify-between ${rest.className} px-8 py-4`}>
+    <nav {...rest} className={`w-full bg-transparent flex justify-between ${rest.className} px-8 py-4 max-sm:flex-col`}>
       <a href="#">
         <img src="" alt="Logo" />
       </a>
-      <ul className="list-none flex items-center gap-14">
+      <ul className="list-none flex items-center gap-14 max-sm:flex-col">
         <NavbarItem label="Home" href="/" isActive={true}/>
         <NavbarItem label="About" href="/about" isActive={false}/>
         <NavbarItem label="Contact" href="/contact" isActive={false}/>
