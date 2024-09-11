@@ -4,17 +4,17 @@ import { SectionNewsletterProps } from "./types";
 
 export const SectionNewsletter = ({}: SectionNewsletterProps) => {
   return (
-    <section className="w-full p-12">
+    <section className="w-full p-12 max-sm:p-8">
       <div className="w-full p-8 bg-gray-50 border border-gray-100 rounded-lg shadow-sm flex flex-col justify-start items-start gap-3">
-        <h3 className="text-4xl font-bold text-gray-800">Fique por dentro das novidades</h3>
-        <p className="text-gray-600 font-sans">
+        <h3 className="text-4xl max-sm:text-2xl font-bold text-gray-800">Fique por dentro das novidades</h3>
+        <p className="text-gray-500 font-sans max-sm:text-sm">
           Receba em primeira mão notificações sobre novas funcionalidades, novos
           produtos, políticas de privacidade e muito mais.
         </p>
         <form className="max-w-2xl">
-          <div className="w-full flex flex-row gap-3 justify-center items-end">
+          <div className="w-full flex flex-row gap-3 justify-center items-end max-sm:flex-col">
             <Input type="email" label="Seu e-mail" className="w-full" />
-            <Button text="Cadastrar" className="h-12" />
+            <Button text="Cadastrar" className="h-12 max-sm:w-full" />
           </div>
           <p
             id="helper-text-explanation"
