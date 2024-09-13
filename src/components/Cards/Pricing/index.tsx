@@ -11,7 +11,7 @@ export const CardPricing = ({
     <div
       className={`w-full max-w-sm p-4 bg-gray-50 border rounded-lg shadow-sm sm:p-8 max-sm:min-w-[300px] ${rest.className}`}
     >
-      <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">
+      <h5 className="mb-4 text-lg font-medium text-gray-400">
         {title}
       </h5>
       <div className="flex items-baseline text-gray-900">
