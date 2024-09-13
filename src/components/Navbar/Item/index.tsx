@@ -16,11 +16,11 @@ export const NavbarItem = ({
       {...rest}
       className={`${
         isActive ? activeStyles.active : activeStyles.default
-      } hover:text-leaf-500 font-sans ${rest.className}`}
+      } ${rest.className}`}
     >
-      <a href={href} className="text-sm font-medium">
+      <a href={href} className="text-sm hover:text-leaf-500 font-sans font-medium block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:border-0">
         {label}
       </a>
-    </li>
+  </li>
   );
 };
