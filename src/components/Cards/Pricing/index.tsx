@@ -57,7 +57,7 @@ export const CardPricing = ({
       </ul>
       <button
         type="button"
-        className="text-white bg-leaf-700 hover:bg-leaf-800 focus:ring-4 focus:outline-none focus:ring-leaf-200 dark:bg-leaf-600 dark:hover:bg-leaf-700 dark:focus:ring-leaf-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
+        className="text-white bg-leaf-600 hover:bg-leaf-700 focus:ring-4 focus:outline-none focus:ring-leaf-200 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center mt-16"
       >
         Saiba mais
       </button>
