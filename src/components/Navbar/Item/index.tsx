@@ -16,9 +16,9 @@ export const NavbarItem = ({
       {...rest}
       className={`${
         isActive ? activeStyles.active : activeStyles.default
-      } ${rest.className}`}
+      } max-md:w-full ${rest.className}`}
     >
-      <a href={href} className="text-sm hover:text-leaf-500 font-sans font-medium block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:border-0">
+      <a href={href} className="text-sm hover:text-leaf-500 font-sans font-medium block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:border-0 max-md:w-full max-md:hover:text-white max-md:hover:bg-leaf-500">
         {label}
       </a>
   </li>

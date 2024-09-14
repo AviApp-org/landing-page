@@ -1,4 +1,6 @@
-export const HamburgerMenu = () => {
+import { HamburgerMenuProps } from "./types";
+
+export const HamburgerMenu = ({ ...rest }: HamburgerMenuProps) => {
   return (
     <button
       data-target="#navbar-default"
@@ -7,6 +9,7 @@ export const HamburgerMenu = () => {
       className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
       aria-controls="#navbar-default"
       aria-expanded="false"
+      {...rest}
     >
       <span className="sr-only">Open main menu</span>
       <svg
