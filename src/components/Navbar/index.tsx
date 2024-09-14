@@ -1,4 +1,5 @@
 "use client";
+import { AviappLogoIcon } from "@/icons/AviappLogoIcon";
 import { useState } from "react";
 import { HamburgerMenu } from "./HamburgerMenu";
 import { NavbarItem } from "./Item";
@@ -10,11 +11,11 @@ export const Navbar = ({ ...rest }: NavbarProps) => {
   return (
     <nav
       {...rest}
-      className={`w-full bg-white border-gray-200 flex justify-between ${rest.className} px-8 py-4 max-md:items-center max-md:flex-col max-md:gap-4`}
+      className={`w-full backdrop-blur border-gray-200 flex items-center justify-between ${rest.className} px-8 py-2 max-md:items-center max-md:flex-col max-md:gap-4`}
     >
       <div className="w-full flex items-center justify-between max-md:flex-row">
         <a href="#">
-          <img src="" alt="Logo" />
+          <AviappLogoIcon color="white" className="h-12 w-auto"/>
         </a>
         <HamburgerMenu onClick={() => setIsOpen(!isOpen)} />
       </div>

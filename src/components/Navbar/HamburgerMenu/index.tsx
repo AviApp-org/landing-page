@@ -6,7 +6,7 @@ export const HamburgerMenu = ({ ...rest }: HamburgerMenuProps) => {
       data-target="#navbar-default"
       data-toggle="collapse"
       type="button"
-      className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+      className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-leaf-400 focus:outline-none focus:ring-2 focus:ring-gray-200"
       aria-controls="#navbar-default"
       aria-expanded="false"
       {...rest}
@@ -18,6 +18,7 @@ export const HamburgerMenu = ({ ...rest }: HamburgerMenuProps) => {
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 17 14"
+        color="white"
       >
         <path
           stroke="currentColor"
