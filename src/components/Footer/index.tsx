@@ -1,3 +1,4 @@
+import { AviappLogoIcon } from "@/icons/AviappLogoIcon";
 import { FooterList } from "./List";
 import { FooterListItem } from "./List/Item";
 
@@ -26,11 +27,7 @@ export const Footer = () => {
           </FooterList>
         </div>
         <div className="w-full flex items-end justify-end p-10 max-sm:p-8 max-sm:pb-0">
-          <img
-            src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="Logo"
-            className="w-20 h-20"
-          />
+          <AviappLogoIcon color="white" className="w-36 h-36" />
         </div>
       </div>
       <div className="w-full border-t border-leaf-400 p-4 mt-6">
