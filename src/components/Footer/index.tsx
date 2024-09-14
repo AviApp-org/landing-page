@@ -3,32 +3,38 @@ import { FooterListItem } from "./List/Item";
 
 export const Footer = () => {
   return (
-    <footer className="bg-leaf-600 w-full h-96 flex flex-col items-center justify-between max-sm:min-h-fit max-sm:h-full max-sm:gap-0">
-      <div className="w-full flex-row items-center justify-between max-sm:flex-col">
-        <div className="w-full p-12 max-sm:p-8 max-sm:pb-0">
+    <footer className="bg-leaf-600 w-full flex flex-col items-center justify-between max-sm:min-h-fit max-sm:h-full max-sm:gap-0">
+      <div className="w-full flex flex-row items-start justify-between p-12 max-sm:flex-col">
+        <div className="w-full flex items-start justify-start gap-20 max-sm:flex-col max-sm:w-full max-sm:gap-6 p-10 max-sm:p-8">
+          <FooterList title="Products">
+            <FooterListItem label="Main products" link="" />
+            <FooterListItem label="Latests updates" link="" />
+            <FooterListItem label="Security" link="" />
+            <FooterListItem label="Server status" link="" />
+            <FooterListItem label="Mobile app" link="" />
+          </FooterList>
+          <FooterList title="Company">
+            <FooterListItem label="About us" link="" />
+            <FooterListItem label="Newsletter" link="" />
+            <FooterListItem label="Privacy" link="" />
+            <FooterListItem label="Terms" link="" />
+          </FooterList>
+          <FooterList title="Help">
+            <FooterListItem label="Contact us" link="" />
+            <FooterListItem label="Help center" link="" />
+            <FooterListItem label="FAQ" link="" />
+          </FooterList>
+        </div>
+        <div className="w-full flex items-end justify-end p-10 max-sm:p-8 max-sm:pb-0">
           <img
             src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="Logo"
             className="w-20 h-20"
           />
         </div>
-        <div className="w-2/3 flex justify-evenly gap-18 max-sm:flex-col max-sm:w-full max-sm:gap-6 p-12 max-sm:p-8">
-          <FooterList title="Contact">
-            <FooterListItem label="E-Mail" link="" />
-            <FooterListItem label="Phone" link="" />
-          </FooterList>
-          <FooterList title="Products">
-            <FooterListItem label="AviApp" link="" />
-          </FooterList>
-          <FooterList title="About-us">
-            <FooterListItem label="Company" link="" />
-            <FooterListItem label="Privacy" link="" />
-            <FooterListItem label="Terms" link="" />
-          </FooterList>
-        </div>
       </div>
-      <div className="w-full border-t border-leaf-700 p-4">
-        <p className="font-sans text-leaf-700 text-center">
+      <div className="w-full border-t border-leaf-400 p-4 mt-6">
+        <p className="font-sans text-leaf-400 text-center">
           All rights reserved © 2022 AviApp
         </p>
       </div>
