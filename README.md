@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AviApp Landing Page
 
-## Getting Started
+Esta é a landing page oficial do **AviApp**, uma solução desktop e mobile para gerenciamento de granjas. O objetivo da landing page é apresentar e promover o produto para fazendeiros de pequeno e médio porte.
 
-First, run the development server:
+## Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **React**
+- **Next.js**
+- **Tailwind CSS**
+- **Yarn** (gerenciador de pacotes)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Estrutura do Projeto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Raiz do Projeto:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **public/**: Contém arquivos públicos, como imagens e ícones, acessíveis diretamente via URL.
+- **src/**: Diretório principal com o código-fonte da aplicação.
+- **next.config.mjs**: Configurações do Next.js, como rotas e otimizações.
+- **postcss.config.mjs**: Configuração do PostCSS, usada em conjunto com o Tailwind CSS para processar os estilos.
+- **README.md**: Este arquivo, contendo a documentação do projeto.
+- **tailwind.config.ts**: Arquivo de configuração do Tailwind CSS, onde você pode personalizar temas e estilos.
+- **yarn.lock**: Arquivo de lock do Yarn, garantindo que as mesmas versões de pacotes sejam instaladas.
+- **package.json**: Define dependências do projeto, scripts e metadados.
+- **tsconfig.json**: Arquivo de configuração para o TypeScript, definindo opções de compilação.
 
-## Learn More
+### Pasta `src`:
 
-To learn more about Next.js, take a look at the following resources:
+- **app/**: Contém os principais arquivos e rotas da aplicação Next.js.
+- **components/**: Conjunto de componentes React reutilizáveis, como botões e formulários.
+- **icons/**: Conjunto de ícones SVG ou componentes de ícones usados na aplicação.
+- **patterns/**: Padrões visuais ou estruturas de layout, como templates de página ou seções reutilizáveis.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Instalação e Execução
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/AviApp-org/landing-page.git
+   ```
+2. Instale as dependências:
+   ```bash
+   yarn install
+   ```
+3. Execute o projeto:
+   ```bash
+   yarn dev
+   ```
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Acesse o projeto em [http://localhost:3000](http://localhost:3000).
