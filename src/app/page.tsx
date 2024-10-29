@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { SectionAbout } from "@/patterns/SectionAbout";
 import { SectionFeatures } from "@/patterns/SectionFeatures";
+import { SectionFeedback } from "@/patterns/SectionFeedback";
 import { SectionNewsletter } from "@/patterns/SectionNewsletter";
 import { SectionPricing } from "@/patterns/SectionPricing";
 
@@ -13,6 +14,7 @@ export default function Home() {
       <Banner />
       <SectionFeatures />
       <SectionAbout />
+      <SectionFeedback />
       <SectionPricing />
       <SectionNewsletter />
       <Footer />
