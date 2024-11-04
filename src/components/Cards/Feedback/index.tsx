@@ -2,7 +2,7 @@ import { CardFeedbackProps } from "./types"
 
 export const CardFeedback = ({ review }: CardFeedbackProps) => {
   return (
-    <div className="min-w-[400px] mb-8 border border-gray-200 rounded-lg shadow-sm md:mb-12 md:grid-cols-2 bg-white">
+    <div className="max-w-[400px] md:min-w-[400px] mb-8 border border-gray-200 rounded-lg shadow-md md:mb-12 md:grid-cols-2 bg-white overflow-visible">
       <figure className="w-full flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e">
         <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8">
           <h3 className="text-lg font-semibold text-gray-900">{review.title}</h3>

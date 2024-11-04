@@ -8,9 +8,9 @@ export const SectionFeedback = () => {
       <div className="w-full h-full max-w-7xl flex flex-col items-center justify-center gap-20 max-sm:gap-2">
         <SectionHeader title="O que nossos clientes dizem" />
 
-        <div className="w-full overflow-scroll flex items-start justify-center gap-2 max-w-4xl max-sm:flex-col max-sm:p-10 max-sm:gap-6">
+        <div className="w-full overflow-scroll flex items-start justify-center gap-4 max-sm:flex-col max-sm:p-10 max-sm:gap-6">
           {reviews.map((review, key) => {
-            return <CardFeedback review={review} key={key} />
+            return <CardFeedback review={review} key={key} className="items-stretch h-max"/>
           })}
         </div>
       </div>
