@@ -1,17 +1,26 @@
+"use client"
 import { EmailService } from "@/api/services/email-service";
 import { Button } from "@/components/Button";
 import { Input } from "@/components/Input";
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import { SectionNewsletterProps } from "./types";
 
-export const SectionNewsletter = ({}: SectionNewsletterProps) => {
+export const SectionNewsletter = ({ }: SectionNewsletterProps) => {
   const [email, setEmail] = useState('')
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault()
+
+    if (email == '') {
+      alert('Informe um e-mail válido')
+      return
+    }
+
     try {
       await EmailService.signToNewsletter(email)
       alert("Agora você faz parte do nosso newsletter!")
     } catch (error) {
+      console.log(error)
       alert("Não foi possível fazer seu cadastro, tente novamente mais tarde")
     }
   }
@@ -24,10 +33,10 @@ export const SectionNewsletter = ({}: SectionNewsletterProps) => {
           Receba em primeira mão notificações sobre novas funcionalidades, novos
           produtos, políticas de privacidade e muito mais.
         </p>
-        <form className="max-w-2xl">
+        <form className="max-w-2xl" onSubmit={handleSubmit}>
           <div className="w-full flex flex-row gap-3 justify-center items-end max-sm:flex-col">
-            <Input type="email" label="Seu e-mail" className="w-full" value={email} onChange={() => setEmail(email)}/>
-            <Button text="Cadastrar" className="h-12 max-sm:w-full" onClick={handleSubmit}/>
+            <Input type="email" label="Seu e-mail" className="w-full" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <Button text="Cadastrar" type="submit" className="h-12 max-sm:w-full" />
           </div>
           <p
             id="helper-text-explanation"
