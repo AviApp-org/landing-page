@@ -6,18 +6,18 @@ import { FormEvent, useState } from "react";
 import { SectionNewsletterProps } from "./types";
 
 export const SectionNewsletter = ({ }: SectionNewsletterProps) => {
-  const [contact, setContact] = useState({ email: "", content: "" });
+  const [contact, setContact] = useState({ toMail: "", content: "" });
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
 
-    if (contact.email == "") {
+    if (contact.toMail == "") {
       alert("Informe um e-mail válido");
       return;
     }
 
     try {
-      await EmailService.signToNewsletter(contact.email, contact.content);
+      await EmailService.signToNewsletter(contact.toMail, contact.content);
       alert("Email enviado com sucesso! Aguarde o retorno da nossa equipe.");
     } catch (error) {
       console.log(error);
@@ -41,9 +41,9 @@ export const SectionNewsletter = ({ }: SectionNewsletterProps) => {
               label="Seu e-mail"
               className="w-full"
               placeholder="seuemail@provedor.com"
-              value={contact.email}
+              value={contact.toMail}
               onChange={(e) =>
-                setContact({ ...contact, email: e.target.value })
+                setContact({ ...contact, toMail: e.target.value })
               }
             />
             <Input
