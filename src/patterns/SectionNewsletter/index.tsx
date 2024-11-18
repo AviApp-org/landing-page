@@ -18,10 +18,10 @@ export const SectionNewsletter = ({ }: SectionNewsletterProps) => {
 
     try {
       await EmailService.signToNewsletter(contact.email, contact.content);
-      alert("Agora você faz parte do nosso newsletter!");
+      alert("Email enviado com sucesso! Aguarde o retorno da nossa equipe.");
     } catch (error) {
       console.log(error);
-      alert("Não foi possível fazer seu cadastro, tente novamente mais tarde");
+      alert("Não foi possível enviar seu e-mail, tente novamente mais tarde");
     }
   };
 
